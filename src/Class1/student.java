@@ -6,12 +6,22 @@ public class student {
   
         private String name;
         private String studentID;
+        private String program;
         
         //Student constructor
-        public student(String givenName, String givenID){
+        public student(String givenName, String givenID, String programName){
             name = givenName;
             studentID = givenID;
+            program = programName;
         }
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String program) {
+        this.program = program;
+    }
         
     public String getName() {
         return name;
